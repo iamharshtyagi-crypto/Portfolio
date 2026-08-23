@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Meta Tags -->
+  <title>Harsh Tyagi | CSE (AI & ML) Student & Developer</title>
+  <meta name="description" content="Portfolio of Harsh Tyagi, a B.Tech Computer Science & Engineering student specializing in Artificial Intelligence & Machine Learning at Lovely Professional University. Exploring AI, ML, backend systems, and problem-solving." />
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Harsh Tyagi | CSE (AI & ML) Student & Developer" />
+  <meta property="og:description" content="Academic profile, projects, certifications, and experience of Harsh Tyagi, B.Tech CSE student at Lovely Professional University." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/iamharshtyagi-crypto" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo">
+        <div class="logo-terminal">&lt;HT /&gt;</div>
+        Harsh<span>Tyagi</span>
+      </a>
+      
+      <!-- Desktop Links -->
+      <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#resume">Resume</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button id="toggle-theme" title="Toggle Dark/Light Mode" aria-label="Toggle Dark Mode">
+          <i data-lucide="sun"></i>
+        </button>
+        <button class="hamburger" id="hamburger" title="Toggle Menu" aria-label="Toggle Navigation Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Links (Hamburger Drawer) -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#resume">Resume</a>
+      <a href="#skills">Skills & Technologies</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-hello">Hello World, I am</span>
+        <h1 class="hero-title">HARSH TYAGI</h1>
+        <div class="hero-subtitle">
+          <span id="typewriter-text"></span><span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-text">
+          Computer Science student passionate about software development, artificial intelligence, machine learning, backend systems, and solving real-world problems through technology.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View My Projects <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="resume/Harsh_Tyagi_Resume.pdf" target="_blank" class="btn btn-secondary">
+            Download Resume <i data-lucide="download"></i>
+          </a>
+        </div>
+        
+        <div class="hero-socials">
+          <a href="https://github.com/iamharshtyagi-crypto" target="_blank" class="social-icon" title="GitHub" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/harsh-tyagi-257415379/" target="_blank" class="social-icon" title="LinkedIn" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/iamharshtyagi121/" target="_blank" class="social-icon" title="LeetCode" aria-label="LeetCode Profile">
+            <i data-lucide="code"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Right Side: Circular Portrait with Floating Brand/Tech Icons -->
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-glow"></div>
+          <img src="me.jpeg" alt="Harsh Tyagi" class="hero-avatar-img">
+          
+          <!-- Floating Brand/Tech Badges surrounding the avatar -->
+          <div class="floating-badge badge-db animate-float" title="PostgreSQL / Databases">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-2.239 10-5V5c0-2.761-4.477-5-10-5S2 2.239 2 5v12c0 2.761 4.477 5 10 5z"/><path d="M22 5c0 2.761-4.477 5-10 5S2 7.761 2 5"/><path d="M2 11c0 2.761 4.477 5 10 5s10-2.239 10-5"/></svg>
+          </div>
+          <div class="floating-badge badge-code animate-float" style="animation-delay: 0.7s;" title="Data Structures & Algorithms">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="floating-badge badge-cpu animate-float" style="animation-delay: 1.4s;" title="AI / Deep Learning Models">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
+          </div>
+          <div class="floating-badge badge-plus animate-float" style="animation-delay: 2.1s;" title="Software Development">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT ME & EDUCATION -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="section-subtitle">A brief overview of my background, academic drive, and engineering mindset.</p>
+      </div>
+      
+      <div class="about-top-desc">
+        <p class="about-desc">
+          My name is Harsh Tyagi, and I am currently pursuing a B.Tech in Computer Science & Engineering with a specialization in Artificial Intelligence & Machine Learning at Lovely Professional University.
+        </p>
+        <p class="about-desc">
+          I enjoy building software, exploring AI and machine learning, solving programming problems, and learning how different technologies work together to create practical solutions.
+        </p>
+        <p class="about-desc">
+          My technical journey currently spans programming, web development, backend development, databases, data processing, and machine learning. I enjoy turning ideas into working projects and continuously improving my understanding through hands-on development. I am particularly interested in Python development, AI/ML, computer vision, backend systems, databases, and problem solving.
+        </p>
+      </div>
+
+      <div class="about-grid" style="margin-top: 30px;">
+        <!-- Left Column: Terminal Simulator + Quick Facts -->
+        <div class="about-visual-col" style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="terminal-window glass-card" style="width: 100%; border-radius: var(--radius-lg);">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">bash - harsh@tyagi-dev</span>
+              <div style="width: 36px;"></div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <!-- Simulated typing lines injected by Javascript -->
+            </div>
+          </div>
+          
+          <div class="quick-facts">
+            <div class="fact-item">
+              <i data-lucide="graduation-cap"></i>
+              <div class="fact-details">
+                <h4>Degree</h4>
+                <p>B.Tech CSE (AI & ML)</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i data-lucide="map-pin"></i>
+              <div class="fact-details">
+                <h4>University</h4>
+                <p>Lovely Professional Univ.</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i data-lucide="bar-chart-2"></i>
+              <div class="fact-details">
+                <h4>CGPA</h4>
+                <p>9.60 / 10.00</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <i data-lucide="terminal"></i>
+              <div class="fact-details">
+                <h4>Enthusiast</h4>
+                <p>Developer & AI/ML</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Timeline -->
+        <div class="education-column">
+          <h3 class="education-title">
+            <i data-lucide="book-open"></i>
+            Education
+          </h3>
+          
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card glass-card">
+                <div class="timeline-header">
+                  <h4 class="timeline-degree">B.Tech - Computer Science & Engineering</h4>
+                  <span class="timeline-date">2025 – Present</span>
+                </div>
+                <div class="timeline-org">Lovely Professional University</div>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 2px;">Specialization: Artificial Intelligence & Machine Learning</p>
+                <div class="timeline-meta">
+                  <span>Jalandhar, Punjab, India</span>
+                  <span>CGPA: <span class="timeline-score">9.60 / 10.00</span></span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card glass-card">
+                <div class="timeline-header">
+                  <h4 class="timeline-degree">Class XII (Senior Secondary)</h4>
+                  <span class="timeline-date">Completed</span>
+                </div>
+                <div class="timeline-org">Global Public School</div>
+                <div class="timeline-meta">
+                  <span>Dhanaura, Amroha, Uttar Pradesh</span>
+                  <span>Percentage: <span class="timeline-score">93.8%</span></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card glass-card">
+                <div class="timeline-header">
+                  <h4 class="timeline-degree">Class X (Secondary School)</h4>
+                  <span class="timeline-date">Completed</span>
+                </div>
+                <div class="timeline-org">Global Public School</div>
+                <div class="timeline-meta">
+                  <span>Dhanaura, Amroha, Uttar Pradesh</span>
+                  <span>Percentage: <span class="timeline-score">96.4%</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. RESUME SECTION -->
+  <section id="resume">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My <span>Resume</span></h2>
+        <p class="section-subtitle">Explore my academic background, technical skills, projects, certifications, and experience.</p>
+      </div>
+      
+      <div class="resume-box glass-card">
+        <div class="resume-icon">
+          <i data-lucide="file-text"></i>
+        </div>
+        <h3>Harsh Tyagi - Professional CV</h3>
+        <p style="color: var(--text-secondary); max-width: 500px;">
+          Access the complete, updated copy of my resume outlining my academic coursework, coding accomplishments, and project methodologies.
+        </p>
+        <div class="resume-buttons">
+          <a href="resume/Harsh_Tyagi_Resume.pdf" target="_blank" class="btn btn-primary">
+            <i data-lucide="eye"></i> View Resume PDF
+          </a>
+          <a href="resume/Harsh_Tyagi_Resume.pdf" download class="btn btn-secondary">
+            <i data-lucide="download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SKILLS & TECHNOLOGIES -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & <span>Technologies</span></h2>
+        <p class="section-subtitle">Grouped technologies, frameworks, and programming tools I have actively applied in projects.</p>
+      </div>
+      
+      <div class="skills-grid" id="skills-container">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. EXPERIENCE SECTION -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience & <span>Activities</span></h2>
+        <p class="section-subtitle">My participation in university campaigns, community services, and volunteer activities.</p>
+      </div>
+      
+      <div class="experience-container">
+        <div class="experience-card glass-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-role">Cybersecurity Awareness Volunteer</h3>
+              <span class="experience-company">Community Development Program — WNS CyberSmart</span>
+            </div>
+            <span class="experience-date">Volunteer Activity</span>
+          </div>
+          
+          <p class="experience-desc">
+            Participated in an institutional Community Development Program focused on cybersecurity awareness, safety standards, and healthy digital practices among students.
+          </p>
+          
+          <ul class="experience-responsibilities">
+            <li>Conducted digital safety and cybersecurity awareness activities for approximately 30 students.</li>
+            <li>Guided and assisted peer students through the WNS CyberSmart online course curriculum.</li>
+            <li>Supported and coordinated candidate registration and certificates distribution upon course completion.</li>
+            <li>Promoted awareness of phishing protection, password hygiene, and safe digital practices.</li>
+            <li>Participated in document reporting and activity validation templates.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PROJECTS SECTION -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">Explore working projects across Machine Learning, Computer Vision, Full-Stack Web Development, and IoT.</p>
+      </div>
+      
+      <div class="projects-grid" id="projects-container">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Certifications <span>& Courses</span></h2>
+        <p class="section-subtitle">Verified professional courses and hackathon achievements from standard online schools and LPU.</p>
+      </div>
+      
+      <div class="certifications-grid" id="certifications-container">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Key <span>Achievements</span></h2>
+        <p class="section-subtitle">A summary of academic landmarks, coding standings, and development highlights.</p>
+      </div>
+      
+      <div class="achievements-grid" id="achievements-container">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <p class="section-subtitle">Have a project idea, collaboration opportunity, or simply want to chat? Drop me a message.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p style="color: var(--text-secondary);">
+            Feel free to reach out via email, phone, or connect on my social networks. I am always open to exploring technical roles, project partnerships, and coding challenges.
+          </p>
+          
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Email Address</h4>
+                <p><a href="mailto:Tyagih193@gmail.com">Tyagih193@gmail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Mobile Number</h4>
+                <p><a href="tel:+918077227129">8077227129</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Location</h4>
+                <p>Jalandhar, Punjab / Uttar Pradesh, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass-card">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="form-name">Full Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Your name" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email">Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="Your email address" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" class="form-input" placeholder="Describe your project, question, or opportunity..." required></textarea>
+            </div>
+            
+            <div id="form-status" class="form-status"></div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message <i data-lucide="send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3 class="footer-logo">Harsh<span>Tyagi</span></h3>
+        <p class="footer-tagline">B.Tech CSE (AI & ML) Student | Developer</p>
+      </div>
+      
+      <div class="hero-socials" style="margin-top: 0;">
+        <a href="https://github.com/iamharshtyagi-crypto" target="_blank" class="social-icon" title="GitHub" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/harsh-tyagi-257415379/" target="_blank" class="social-icon" title="LinkedIn" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://leetcode.com/u/iamharshtyagi121/" target="_blank" class="social-icon" title="LeetCode" aria-label="LeetCode Profile">
+          <i data-lucide="code"></i>
+        </a>
+      </div>
+      
+      <div class="footer-copyright">
+        <p>&copy; 2026 Harsh Tyagi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>

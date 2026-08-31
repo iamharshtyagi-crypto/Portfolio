@@ -573,16 +573,6 @@ header {
 }
 
 /* 2. ABOUT ME SECTION */
-.about-top-desc {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 24px;
-  font-size: 0.95rem;
-  color: var(--text-primary);
-  max-width: 950px;
-}
-
 .about-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -590,10 +580,15 @@ header {
   align-items: flex-start;
 }
 
-.about-visual-col {
+.about-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
+}
+
+.about-desc {
+  font-size: 0.95rem;
+  color: var(--text-primary);
 }
 
 .quick-facts {

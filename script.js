@@ -319,83 +319,7 @@ function renderAchievements() {
   `).join('');
 }
 
-// SIMULATED TERMINAL CODE EFFECT
-const terminalCodeLines = [
-  { text: "# Initializing Developer Environment...", isComment: true },
-  { text: "import developer as dev", isCode: true },
-  { text: "import lpu_student as student", isCode: true },
-  { text: "", isCode: true },
-  { text: "harsh = dev.Developer(name='Harsh Tyagi')", isCode: true },
-  { text: "harsh.education = 'B.Tech CSE (AI & ML)'", isCode: true },
-  { text: "harsh.university = 'Lovely Professional University'", isCode: true },
-  { text: "harsh.cgpa = 9.60", isCode: true },
-  { text: "", isCode: true },
-  { text: "harsh.skills = [", isCode: true },
-  { text: "    'Python', 'C++', 'FastAPI',", isCode: true, isIndent: true },
-  { text: "    'Machine Learning', 'Computer Vision'", isCode: true, isIndent: true },
-  { text: "]", isCode: true },
-  { text: "", isCode: true },
-  { text: "# Running breed detection test...", isComment: true },
-  { text: "model = dev.load_model('PashuScan_yolov8')", isCode: true },
-  { text: "print(model.predict('cattle_sample.jpg'))", isCode: true },
-  { text: ">> ['Sahiwal Cattle', Confidence: 94.2%]", isOutput: true },
-  { text: "", isCode: true },
-  { text: "harsh.status = 'Ready for Internships & Collaborations!'", isCode: true },
-  { text: "print(harsh.status)", isCode: true },
-  { text: ">> 'Ready for Internships & Collaborations!'", isOutput: true }
-];
 
-function runTerminalSimulation() {
-  const terminalBody = document.getElementById("terminal-body");
-  if (!terminalBody) return;
-  
-  terminalBody.innerHTML = "";
-  let lineIndex = 0;
-  
-  function printNextLine() {
-    if (lineIndex >= terminalCodeLines.length) {
-      // Loop the terminal animation after a long pause
-      setTimeout(() => {
-        runTerminalSimulation();
-      }, 5000);
-      return;
-    }
-    
-    const line = terminalCodeLines[lineIndex];
-    const lineElement = document.createElement("div");
-    lineElement.className = "terminal-line";
-    
-    if (line.isComment) {
-      lineElement.innerHTML = `<span class="terminal-comment">${line.text}</span>`;
-    } else if (line.isOutput) {
-      lineElement.innerHTML = `<span class="terminal-string" style="color: #38bdf8;">${line.text}</span>`;
-    } else {
-      // Format simple code line
-      let html = `<span class="terminal-prompt">&gt;</span>`;
-      let text = line.text;
-      
-      // Basic syntax highlight regexes
-      text = text.replace(/(import|as|from|class|def|return|if|for|in|import)/g, '<span class="terminal-keyword">$1</span>');
-      text = text.replace(/('([^'\\]|\\.)*')/g, '<span class="terminal-string">$1</span>');
-      text = text.replace(/([0-9\.]+)/g, '<span class="terminal-number">$1</span>');
-      
-      lineElement.innerHTML = `${html}<span class="terminal-content" style="${line.isIndent ? 'padding-left: 20px;' : ''}">${text}</span>`;
-    }
-    
-    terminalBody.appendChild(lineElement);
-    
-    // Auto-scroll terminal body
-    terminalBody.scrollTop = terminalBody.scrollHeight;
-    
-    lineIndex++;
-    
-    // Vary typing speed depending on if output or code
-    const delay = line.isOutput ? 200 : (line.text.length === 0 ? 100 : 350);
-    setTimeout(printNextLine, delay);
-  }
-  
-  printNextLine();
-}
 
 // HERO HEADLINE TYPEWRITER EFFECT
 const typingPhrases = [
@@ -515,7 +439,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // 3. Start animation modules
   initTypewriter();
-  runTerminalSimulation();
   initScrollReveal();
   handleScrollSpy();
   
